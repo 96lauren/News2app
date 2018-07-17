@@ -1,14 +1,17 @@
 <template>
+  
   <div class="container">
+  	<h1>Top trending news WorldWide </h1>
     <div v-for="article in news">
   <img :src="article.urlToImage" alt="">
   
-      <h3>{{article.title}}</h3>
+      <h3><strong>{{article.title}}</strong></h3>
   
       <h4>{{article.author}}</h4>
       
       <p> {{article.description}}</p>
       <a class="button" :href= "article.url" target="_blank" >read more</a>
+      <hr>
 
   </div>
   </div>
